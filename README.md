@@ -14,10 +14,20 @@ Then visit `http://localhost:5173`.
 
 ## Deploy
 
-This repo is ready for static hosting on GitHub Pages, Netlify, Vercel, or Cloudflare Pages.
+This repo is ready for static hosting on Netlify, Vercel, or Cloudflare Pages.
 
-For GitHub Pages, use:
+For Vercel:
 
-- Source: `Deploy from a branch`
-- Branch: `main`
-- Folder: `/ (root)`
+- Framework preset: `Other`
+- Output directory: `.`
+
+For Netlify:
+
+- Build command: leave blank
+- Publish directory: `.`
+
+For Cloudflare Pages:
+
+- Framework preset: `None`
+- Build command: leave blank
+- Output directory: `.`
