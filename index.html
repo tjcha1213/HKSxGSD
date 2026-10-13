@@ -61,9 +61,16 @@
                 operating logic, funding needs, and a path toward sustainability.
               </p>
             </div>
-            <div class="speaker-thumb" aria-label="Funding and business plan expert thumbnail">
-              <span>Expert</span>
-            </div>
+            <button
+              class="speaker-thumb speaker-featured"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="richard-cavanagh-modal"
+              data-modal-open="richard-cavanagh-modal"
+            >
+              <img src="./assets/richard-cavanagh.png" alt="Richard Cavanagh" />
+              <span>Richard Cavanagh</span>
+            </button>
           </li>
           <li class="agenda-item">
             <div class="step">03</div>
@@ -99,9 +106,19 @@
                 fellow participants and experts leading each topic session.
               </p>
             </div>
-            <div class="speaker-thumb" aria-label="Feedback session expert thumbnail">
-              <span>Expert</span>
-            </div>
+            <button
+              class="speaker-thumb speaker-featured"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="hong-qu-modal"
+              data-modal-open="hong-qu-modal"
+            >
+              <img
+                src="https://winthrop.harvard.edu/sites/g/files/omnuum9706/files/2026-04/Photo_HongQu.jpg"
+                alt="Hong Qu"
+              />
+              <span>Hong Qu</span>
+            </button>
           </li>
         </ol>
       </section>
@@ -147,7 +164,7 @@
           alt="Kathy Pham"
         />
         <div class="modal-copy">
-          <p class="eyebrow">Example Keynote Speaker</p>
+          <p class="eyebrow">Keynote Speaker</p>
           <h2 id="kathy-pham-title">Kathy Pham</h2>
           <p class="speaker-role">Adjunct Lecturer in Public Policy, Harvard Kennedy School</p>
           <p>
@@ -162,6 +179,67 @@
             from concept to tested product: defining the user problem, checking
             feasibility, building responsibly, and shaping prototypes that can
             earn useful feedback from real communities.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog
+      class="speaker-modal"
+      id="richard-cavanagh-modal"
+      aria-labelledby="richard-cavanagh-title"
+    >
+      <div class="modal-card">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">
+          Close
+        </button>
+        <img src="./assets/richard-cavanagh.png" alt="Richard Cavanagh" />
+        <div class="modal-copy">
+          <p class="eyebrow">Keynote Speaker</p>
+          <h2 id="richard-cavanagh-title">Richard Cavanagh</h2>
+          <p class="speaker-role">Adjunct Lecturer in Public Policy, Harvard Kennedy School</p>
+          <p>
+            Richard E. Cavanagh teaches entrepreneurship and entrepreneurial
+            management at HKS, including courses on entrepreneurship and
+            innovation in the private and social sectors and a business plan
+            workshop. He previously served as Executive Dean of Harvard Kennedy
+            School and as President and CEO of The Conference Board.
+          </p>
+          <p>
+            For the funding and business plan session, Richard brings direct
+            experience helping students turn early venture concepts into
+            financially literate, strategically grounded plans for private or
+            social-sector enterprises.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="speaker-modal" id="hong-qu-modal" aria-labelledby="hong-qu-title">
+      <div class="modal-card">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">
+          Close
+        </button>
+        <img
+          src="https://winthrop.harvard.edu/sites/g/files/omnuum9706/files/2026-04/Photo_HongQu.jpg"
+          alt="Hong Qu"
+        />
+        <div class="modal-copy">
+          <p class="eyebrow">Keynote Speaker</p>
+          <h2 id="hong-qu-title">Hong Qu</h2>
+          <p class="speaker-role">Adjunct Lecturer in Public Policy, Harvard Kennedy School</p>
+          <p>
+            Hong Qu teaches data visualization at HKS and serves as a research
+            fellow at the Malcolm Wiener Center for Social Policy. He was one of
+            the first engineers on YouTube's startup team, where he helped build
+            core product features including video sharing, channels, and
+            skippable ads.
+          </p>
+          <p>
+            For the feedback sessions, Hong brings a builder's and storyteller's
+            eye to how teams present evidence, communicate product choices, and
+            use critique to make an idea clearer, more usable, and more
+            compelling.
           </p>
         </div>
       </div>
