@@ -75,9 +75,19 @@
                 proof of concept that makes the idea tangible.
               </p>
             </div>
-            <div class="speaker-thumb" aria-label="Feasibility and prototyping expert thumbnail">
-              <span>Expert</span>
-            </div>
+            <button
+              class="speaker-thumb speaker-featured"
+              type="button"
+              aria-haspopup="dialog"
+              aria-controls="kathy-pham-modal"
+              data-modal-open="kathy-pham-modal"
+            >
+              <img
+                src="https://workday.scene7.com/is/image/workday/img-headshot-kathy-pham-1280x1280?wid=500"
+                alt="Kathy Pham"
+              />
+              <span>Kathy Pham</span>
+            </button>
           </li>
           <li class="agenda-item">
             <div class="step">04</div>
@@ -126,5 +136,37 @@
         </div>
       </section>
     </main>
+
+    <dialog class="speaker-modal" id="kathy-pham-modal" aria-labelledby="kathy-pham-title">
+      <div class="modal-card">
+        <button class="modal-close" type="button" data-modal-close aria-label="Close">
+          Close
+        </button>
+        <img
+          src="https://workday.scene7.com/is/image/workday/img-headshot-kathy-pham-1280x1280?wid=900"
+          alt="Kathy Pham"
+        />
+        <div class="modal-copy">
+          <p class="eyebrow">Example Keynote Speaker</p>
+          <h2 id="kathy-pham-title">Kathy Pham</h2>
+          <p class="speaker-role">Adjunct Lecturer in Public Policy, Harvard Kennedy School</p>
+          <p>
+            Kathy Pham is a computer scientist, product leader, and founder whose
+            work spans product management, software engineering, AI, ethics, and
+            public-interest technology. At HKS, she created and teaches Product
+            Management and Society, helping students connect technology decisions
+            with public purpose.
+          </p>
+          <p>
+            For the prototyping session, Kathy offers a practical lens on moving
+            from concept to tested product: defining the user problem, checking
+            feasibility, building responsibly, and shaping prototypes that can
+            earn useful feedback from real communities.
+          </p>
+        </div>
+      </div>
+    </dialog>
+
+    <script src="./script.js"></script>
   </body>
 </html>
