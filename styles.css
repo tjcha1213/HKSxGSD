@@ -441,21 +441,28 @@ article p {
 .site-footer {
   width: min(1120px, calc(100% - 40px));
   margin: 0 auto;
-  padding: 0 0 48px;
+  padding: 0 0 56px;
 }
 
-.site-footer p {
-  margin: 0;
+.footer-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
   border-top: 1px solid var(--line);
-  padding-top: 22px;
-  color: var(--muted);
-  font-size: 0.92rem;
-  line-height: 1.45;
+  border-bottom: 1px solid var(--line);
+  padding: 24px 0;
 }
 
-.site-footer a {
-  color: var(--teal);
-  font-weight: 800;
+.footer-card p {
+  margin: 0;
+}
+
+.footer-card p:last-child {
+  color: var(--muted);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 2.4vw, 2.2rem);
+  line-height: 1.45;
 }
 
 @media (max-width: 760px) {
@@ -519,6 +526,11 @@ article p {
 
   .interest-form {
     grid-template-columns: 1fr;
+  }
+
+  .footer-card {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .button {
