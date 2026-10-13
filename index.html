@@ -152,6 +152,53 @@
           </article>
         </div>
       </section>
+
+      <section class="interest" id="interest" aria-labelledby="interest-title">
+        <div class="interest-card">
+          <div class="interest-copy">
+            <p class="eyebrow">Interest Form</p>
+            <h2 id="interest-title">Join the HKSxGSD Sequence</h2>
+            <p>
+              Share a little about yourself and the idea you want to develop.
+              We will follow up with session details, dates, and next steps.
+            </p>
+          </div>
+          <form class="interest-form" id="interest-form">
+            <label>
+              Name
+              <input name="name" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              School / Affiliation
+              <input name="affiliation" type="text" autocomplete="organization" />
+            </label>
+            <label>
+              Idea Stage
+              <select name="stage" required>
+                <option value="">Select one</option>
+                <option>Exploring a problem</option>
+                <option>Have an idea</option>
+                <option>Drafting a business plan</option>
+                <option>Building a prototype</option>
+                <option>Looking for feedback</option>
+              </select>
+            </label>
+            <label class="full-field">
+              What are you working on?
+              <textarea
+                name="idea"
+                rows="4"
+                placeholder="A few sentences is perfect."
+              ></textarea>
+            </label>
+            <button class="button primary full-field" type="submit">Send Interest</button>
+          </form>
+        </div>
+      </section>
     </main>
 
     <dialog class="speaker-modal" id="kathy-pham-modal" aria-labelledby="kathy-pham-title">

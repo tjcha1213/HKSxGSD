@@ -109,7 +109,8 @@ h1 {
 }
 
 .program,
-.outcome {
+.outcome,
+.interest {
   border-top: 1px solid var(--line);
   padding-top: 36px;
 }
@@ -370,6 +371,73 @@ article p {
   line-height: 1.55;
 }
 
+.interest {
+  margin-top: 56px;
+}
+
+.interest-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.72fr) minmax(420px, 1.28fr);
+  gap: 28px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.72);
+  padding: 28px;
+}
+
+.interest-copy p:last-child {
+  max-width: 420px;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.interest-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.interest-form label {
+  display: grid;
+  gap: 7px;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.interest-form input,
+.interest-form select,
+.interest-form textarea {
+  width: 100%;
+  border: 1px solid rgba(23, 33, 38, 0.22);
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.86);
+  color: var(--ink);
+  font: inherit;
+  letter-spacing: 0;
+  min-height: 44px;
+  padding: 10px 12px;
+  text-transform: none;
+}
+
+.interest-form textarea {
+  min-height: 118px;
+  resize: vertical;
+}
+
+.interest-form input:focus,
+.interest-form select:focus,
+.interest-form textarea:focus {
+  border-color: var(--teal);
+  outline: 3px solid rgba(14, 107, 115, 0.16);
+}
+
+.full-field {
+  grid-column: 1 / -1;
+}
+
 @media (max-width: 760px) {
   .shell {
     width: min(100% - 28px, 1120px);
@@ -385,7 +453,8 @@ article p {
   }
 
   .section-heading,
-  .outcome {
+  .outcome,
+  .interest-card {
     grid-template-columns: 1fr;
   }
 
@@ -421,6 +490,14 @@ article p {
   }
 
   .outcome-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-card {
+    padding: 20px;
+  }
+
+  .interest-form {
     grid-template-columns: 1fr;
   }
 
