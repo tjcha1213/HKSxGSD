@@ -120,10 +120,27 @@ h2 {
 
 .section-heading {
   display: grid;
-  grid-template-columns: minmax(220px, 0.82fr) minmax(320px, 1.18fr);
-  gap: 28px;
-  align-items: end;
-  margin-bottom: 28px;
+  grid-template-columns: minmax(260px, 0.72fr) minmax(360px, 1.28fr);
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 22px;
+}
+
+.agenda-kicker {
+  margin: 0;
+  color: var(--teal);
+  font-size: 0.86rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+.agenda-kicker span {
+  display: block;
+  color: var(--muted);
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
 }
 
 .section-heading p:last-child {
@@ -144,7 +161,7 @@ h2 {
 
 .agenda-item {
   display: grid;
-  grid-template-columns: 88px minmax(0, 1fr);
+  grid-template-columns: 88px minmax(0, 1fr) 132px;
   gap: 18px;
   align-items: stretch;
   border: 1px solid var(--line);
@@ -188,6 +205,40 @@ h2 {
   margin-bottom: 0;
   color: var(--muted);
   line-height: 1.55;
+}
+
+.speaker-thumb {
+  position: relative;
+  display: grid;
+  min-height: 118px;
+  place-items: center;
+  overflow: hidden;
+  border: 1px dashed rgba(23, 33, 38, 0.32);
+  border-radius: 6px;
+  background:
+    linear-gradient(135deg, rgba(197, 143, 42, 0.2), rgba(14, 107, 115, 0.12)),
+    rgba(255, 255, 255, 0.72);
+}
+
+.speaker-thumb::before {
+  content: "";
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 50% 35%, rgba(23, 33, 38, 0.28) 0 28%, transparent 29%),
+    radial-gradient(ellipse at 50% 86%, rgba(23, 33, 38, 0.22) 0 45%, transparent 46%);
+}
+
+.speaker-thumb span {
+  position: absolute;
+  right: 10px;
+  bottom: 9px;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .outcome {
@@ -242,8 +293,14 @@ article p {
     grid-template-columns: 1fr;
   }
 
-  .step {
+  .step,
+  .speaker-thumb {
     min-height: 58px;
+  }
+
+  .speaker-thumb::before {
+    width: 42px;
+    height: 42px;
   }
 
   .outcome-grid {
